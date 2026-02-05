@@ -1,1 +1,426 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bicicletas / Spinning – Gallant</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #3498db;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    h2 {
+      color: #34495e;
+      margin-top: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 10px 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+    th {
+      background-color: #34495e;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #eef5ff;
+    }
+    ul {
+      padding-left: 1.8rem;
+      margin: 1rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    /* Responsividade para tabelas em mobile */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        display: none;
+      }
+      tr {
+        margin-bottom: 1.2rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        min-height: 2.2em;
+      }
+      td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+        color: #34495e;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="remos.html">Remos</a>
+  <a href="bicicletas.html">Bicicletas</a>
+  <a href="esteiras.html">Esteiras</a>
+</nav>
+
+<div class="container">
+  <h1>Bicicletas / Spinning Gallant</h1>
+  
+  <p><strong>Manuais, termos de garantia e informações técnicas:</strong></p>
+  <ul>
+    <li>Manual do produto</li>
+    <li>Termo de garantia</li>
+    <li>Planilhas de peças</li>
+  </ul>
+
+  <h2>Comparativo Técnico – Modelos de Spinning / Bicicletas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>SKU</th>
+        <th>Modelo</th>
+        <th>Descrição</th>
+        <th>Correia</th>
+        <th>Rolamento Central</th>
+        <th>Rolamento Roda</th>
+        <th>Peso Roda</th>
+        <th>Resistência</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="SKU">E51360280403069021</td>
+        <td data-label="Modelo">GSB18HBTA-PT</td>
+        <td data-label="Descrição">Elite Pro Spinning até 120Kg Mecânica</td>
+        <td data-label="Correia">1230</td>
+        <td data-label="Rolamento Central">6004</td>
+        <td data-label="Rolamento Roda">6202</td>
+        <td data-label="Peso Roda">18KG</td>
+        <td data-label="Resistência">FRICÇÃO</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360270405069021</td>
+        <td data-label="Modelo">GSB13HBTA-PT</td>
+        <td data-label="Descrição">Elite Spinning até 110Kg Mecânica</td>
+        <td data-label="Correia">470J</td>
+        <td data-label="Rolamento Central">6004</td>
+        <td data-label="Rolamento Roda">6300</td>
+        <td data-label="Peso Roda">13KG</td>
+        <td data-label="Resistência">FRICÇÃO</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360450405019031</td>
+        <td data-label="Modelo">GSB08HBTA-PT</td>
+        <td data-label="Descrição">Elite X Spinning 8Kg até 110Kg Mecânica</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">6203</td>
+        <td data-label="Rolamento Roda">6300</td>
+        <td data-label="Peso Roda">8KG</td>
+        <td data-label="Resistência">FRICÇÃO</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360290401019011</td>
+        <td data-label="Modelo">GSB18SMGA-PT</td>
+        <td data-label="Descrição">Smart Spinning até 150Kg Magnética</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">18KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360270101049011</td>
+        <td data-label="Modelo">GBE01HMGA-PT</td>
+        <td data-label="Descrição">Magnética Dobrável Gallant Elite</td>
+        <td data-label="Correia">237J e PJ602/237</td>
+        <td data-label="Rolamento Central">_</td>
+        <td data-label="Rolamento Roda">608 2RS A1</td>
+        <td data-label="Peso Roda">1,5KG (interno)</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360270303049011</td>
+        <td data-label="Modelo">GBEV1HMGA-CZ</td>
+        <td data-label="Descrição">Horizontal Magnética Gallant Elite</td>
+        <td data-label="Correia">370PJ6</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">3KG (interno)</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360380302019012</td>
+        <td data-label="Modelo">GBEV05HMGAPT</td>
+        <td data-label="Descrição">Horizontal Magnética Gallant Elite Pro</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">5KG (interno)</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360380302019011</td>
+        <td data-label="Modelo">GBEV1HMGB-PT</td>
+        <td data-label="Descrição">Horizontal Magnética Gallant Elite X</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">2,5KG (interno)</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360270201049012</td>
+        <td data-label="Modelo">GBE02HMGB-CZ</td>
+        <td data-label="Descrição">Vertical Magnética Gallant Elite</td>
+        <td data-label="Correia">350PJ6</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">2KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360400402019011</td>
+        <td data-label="Modelo">GSB06HBTA-PT</td>
+        <td data-label="Descrição">Trainer Roda de 6kg</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">6KG</td>
+        <td data-label="Resistência">FRICÇÃO</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360480401049012</td>
+        <td data-label="Modelo">GSB07HMGB-PT</td>
+        <td data-label="Descrição">Connect Max Magnética</td>
+        <td data-label="Correia">PJ555</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">_</td>
+        <td data-label="Peso Roda">7,5KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360480401049011</td>
+        <td data-label="Modelo">GSB07HMGA-PT</td>
+        <td data-label="Descrição">Connect Power Magnética</td>
+        <td data-label="Correia">PJ515</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">_</td>
+        <td data-label="Peso Roda">7,5KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360450401049012</td>
+        <td data-label="Modelo">GSB08HMGA-PT</td>
+        <td data-label="Descrição">Elite X Magnética 8kg</td>
+        <td data-label="Correia">2823 052B</td>
+        <td data-label="Rolamento Central">6004</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">8KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360491303049031</td>
+        <td data-label="Modelo">GSB13HMGA-PT</td>
+        <td data-label="Descrição">Elite Magnética 13kg</td>
+        <td data-label="Correia">380PJ6</td>
+        <td data-label="Rolamento Central">6004</td>
+        <td data-label="Rolamento Roda">6001</td>
+        <td data-label="Peso Roda">13KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360390202019011</td>
+        <td data-label="Modelo">GBE1HBTB-PT</td>
+        <td data-label="Descrição">Vertical Gallant Flow</td>
+        <td data-label="Correia">NÃO CONTÉM</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">NÃO CONTÉM</td>
+        <td data-label="Resistência">LONA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360400202019011</td>
+        <td data-label="Modelo">GBE1HBTA-PT</td>
+        <td data-label="Descrição">Vertical Gallant Trainer</td>
+        <td data-label="Correia">NÃO CONTÉM</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">NÃO CONTÉM</td>
+        <td data-label="Resistência">LONA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360400202109012</td>
+        <td data-label="Modelo">GBE1HBTC-PT</td>
+        <td data-label="Descrição">Vertical Gallant Trainer 2.0</td>
+        <td data-label="Correia">NÃO CONTÉM</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">NÃO CONTÉM</td>
+        <td data-label="Resistência">LONA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360270202049031</td>
+        <td data-label="Modelo">GBE03HMGA-BR</td>
+        <td data-label="Descrição">Vertical Elite X Branca</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">4,5KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360270202049032</td>
+        <td data-label="Modelo">GBE03HMGA-PT</td>
+        <td data-label="Descrição">Vertical Elite X Preta</td>
+        <td data-label="Correia">—</td>
+        <td data-label="Rolamento Central">—</td>
+        <td data-label="Rolamento Roda">—</td>
+        <td data-label="Peso Roda">4,5KG</td>
+        <td data-label="Resistência">MAGNÉTICA</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360521403129011</td>
+        <td data-label="Modelo">GSB20HBTA-PT</td>
+        <td data-label="Descrição">Power Pro Mecânica</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">6004PS</td>
+        <td data-label="Rolamento Roda">6202PS</td>
+        <td data-label="Peso Roda">20KG</td>
+        <td data-label="Resistência">FRICÇÃO</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360531303139011</td>
+        <td data-label="Modelo">GSP06HMGA-PT</td>
+        <td data-label="Descrição">Gallant Start Magnética</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">preencher</td>
+        <td data-label="Rolamento Roda">preencher</td>
+        <td data-label="Peso Roda">6KG</td>
+        <td data-label="Resistência">Magnética</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360561503149011</td>
+        <td data-label="Modelo">GAB03PWHUA-PT</td>
+        <td data-label="Descrição">Air Bike Gallant Essential</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">preencher</td>
+        <td data-label="Rolamento Roda">preencher</td>
+        <td data-label="Peso Roda">SEM INFO</td>
+        <td data-label="Resistência">Magnética</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360551503139011</td>
+        <td data-label="Modelo">GAB6SWCUA-PT</td>
+        <td data-label="Descrição">Air Bike Gallant Professional</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">preencher</td>
+        <td data-label="Rolamento Roda">preencher</td>
+        <td data-label="Peso Roda">SEM INFO</td>
+        <td data-label="Resistência">Magnética</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360541403139011</td>
+        <td data-label="Modelo">GSB06HBTB-PT</td>
+        <td data-label="Descrição">Gallant Power X</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">preencher</td>
+        <td data-label="Rolamento Roda">preencher</td>
+        <td data-label="Peso Roda">6KG</td>
+        <td data-label="Resistência">Fricção</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360550401169011</td>
+        <td data-label="Modelo">GSB10HMGA-PT</td>
+        <td data-label="Descrição">Gallant Elevate Max</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">preencher</td>
+        <td data-label="Rolamento Roda">preencher</td>
+        <td data-label="Peso Roda">10KG</td>
+        <td data-label="Resistência">Magnética Eletrônica</td>
+      </tr>
+      <tr>
+        <td data-label="SKU">E51360550401166011</td>
+        <td data-label="Modelo">GSB08HMGB-PT</td>
+        <td data-label="Descrição">Gallant Elevate Pulse</td>
+        <td data-label="Correia">___</td>
+        <td data-label="Rolamento Central">preencher</td>
+        <td data-label="Rolamento Roda">preencher</td>
+        <td data-label="Peso Roda">08KG</td>
+        <td data-label="Resistência">Magnética Eletrônica</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer>
+  © Gallant – Suporte Técnico
+</footer>
+
+</body>
+</html>
