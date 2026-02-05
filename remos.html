@@ -2,8 +2,108 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Remos – Gallant</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #3498db;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 12px 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #34495e;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #eef5ff;
+    }
+    ul {
+      padding-left: 1.8rem;
+      margin: 1rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        display: none;
+      }
+      tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      }
+      td:before {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -16,15 +116,82 @@
 
 <div class="container">
   <h1>Remos</h1>
-
+  
   <p><strong>Manuais, termos de garantia e informações técnicas:</strong></p>
-
-  <!-- COLE AQUI TODO O CONTEÚDO DE REMOS -->
   <ul>
     <li>Manual do produto</li>
     <li>Termo de garantia</li>
     <li>Planilhas de peças</li>
   </ul>
+
+  <h2>Comparativo – Remos Gallant</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Resistência</th>
+        <th>APPs</th>
+        <th>Uso Recomendado</th>
+        <th>Rodinhas</th>
+        <th>Alcunha</th>
+        <th>Fabricante</th>
+        <th>Limites</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Modelo">GRS01HHDACZ-PT</td>
+        <td data-label="Resistência">hidráulica</td>
+        <td data-label="APPs">Não</td>
+        <td data-label="Uso Recomendado">Residencial</td>
+        <td data-label="Rodinhas">Não</td>
+        <td data-label="Alcunha">Remo Elite X</td>
+        <td data-label="Fabricante">?</td>
+        <td data-label="Limites">?</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">GRS11HHDA Cz-PT</td>
+        <td data-label="Resistência">hidráulica</td>
+        <td data-label="APPs">Não</td>
+        <td data-label="Uso Recomendado">Residencial</td>
+        <td data-label="Rodinhas">Não</td>
+        <td data-label="Alcunha">Remo Elite X</td>
+        <td data-label="Fabricante">?</td>
+        <td data-label="Limites">?</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">GRS02HHDdA-Cz</td>
+        <td data-label="Resistência">hidráulica</td>
+        <td data-label="APPs">Não</td>
+        <td data-label="Uso Recomendado">Residencial</td>
+        <td data-label="Rodinhas">Não</td>
+        <td data-label="Alcunha">Remo Elite</td>
+        <td data-label="Fabricante">Saiyji</td>
+        <td data-label="Limites">?</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">GRS03HMGA-PT</td>
+        <td data-label="Resistência">Magnético</td>
+        <td data-label="APPs">Não</td>
+        <td data-label="Uso Recomendado">Residencial</td>
+        <td data-label="Rodinhas">Sim</td>
+        <td data-label="Alcunha">Remo Magnético Gallant</td>
+        <td data-label="Fabricante">Jintuo</td>
+        <td data-label="Limites">130kg 1,95m</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">GRS03HMGB-PT</td>
+        <td data-label="Resistência">Magnético</td>
+        <td data-label="APPs">Não</td>
+        <td data-label="Uso Recomendado">Residencial</td>
+        <td data-label="Rodinhas">Sim</td>
+        <td data-label="Alcunha">Remo Elite XKg</td>
+        <td data-label="Fabricante">?</td>
+        <td data-label="Limites">120kg 1,90m</td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>
 
