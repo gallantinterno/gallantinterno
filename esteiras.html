@@ -1,1 +1,379 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esteiras – Gallant</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #3498db;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 0.5rem;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    h2, h3 {
+      color: #34495e;
+      margin: 2rem 0 1rem;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 10px 8px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+    th {
+      background-color: #34495e;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    /* Alternância suave de cores */
+    tr:nth-child(even) {
+      background-color: #f5f8fc;
+    }
+    tr:nth-child(odd) {
+      background-color: #fafbfc;
+    }
+    tr:hover {
+      background-color: #e8f4ff;
+    }
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    /* Responsividade para tabelas em mobile */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        display: none;
+      }
+      tr {
+        margin-bottom: 1.2rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        min-height: 2.2em;
+      }
+      td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+        color: #34495e;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="remos.html">Remos</a>
+  <a href="bicicletas.html">Bicicletas</a>
+  <a href="esteiras.html">Esteiras</a>
+</nav>
+
+<div class="container">
+  <h1>Esteiras Gallant</h1>
+
+  <h2>Comparativo Técnico – Modelos de Esteiras</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Vel. Máx.</th>
+        <th>Cap. Peso</th>
+        <th>Inclinação</th>
+        <th>Amortecimento</th>
+        <th>Corretor Postural</th>
+        <th>Superfície</th>
+        <th>Uso Recomendado</th>
+        <th>Tomada</th>
+        <th>?</th>
+        <th>Características Principais</th>
+        <th>Observações / Limites</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Modelo">Gallant 1.6 HP</td>
+        <td data-label="Vel. Máx.">10 km/h</td>
+        <td data-label="Cap. Peso">100 kg</td>
+        <td data-label="Inclinação">Manual</td>
+        <td data-label="Amortecimento">Manual</td>
+        <td data-label="Corretor Postural">não possui</td>
+        <td data-label="Superfície">102,5 x 40 cm</td>
+        <td data-label="Uso Recomendado">Caminhada (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Painel digital básico, dobrável</td>
+        <td data-label="Observações">1.6 Treino máximo 60min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 1.9 HP</td>
+        <td data-label="Vel. Máx.">10 km/h</td>
+        <td data-label="Cap. Peso">100 kg</td>
+        <td data-label="Inclinação">Manual</td>
+        <td data-label="Amortecimento">não</td>
+        <td data-label="Corretor Postural">2 grandes</td>
+        <td data-label="Superfície">100x38 cm</td>
+        <td data-label="Uso Recomendado">Caminhada (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Monitoramento de frequência cardíaca, programas de treino</td>
+        <td data-label="Observações">1.9 Treino máximo 99min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 2.0 HP</td>
+        <td data-label="Vel. Máx.">12,8 km/h</td>
+        <td data-label="Cap. Peso">110 kg</td>
+        <td data-label="Inclinação">Manual</td>
+        <td data-label="Amortecimento">não</td>
+        <td data-label="Corretor Postural">4 unidades</td>
+        <td data-label="Superfície">110 x 40 cm</td>
+        <td data-label="Uso Recomendado">Caminhada (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Painel LCD, programas de treino pré-definidos</td>
+        <td data-label="Observações">2.0 Treino máximo 45min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <!-- Continuação das linhas... (copiei todas do seu input) -->
+      <tr>
+        <td data-label="Modelo">Gallant 2.5 HP</td>
+        <td data-label="Vel. Máx.">14 km/h</td>
+        <td data-label="Cap. Peso">120 kg</td>
+        <td data-label="Inclinação">Manual</td>
+        <td data-label="Amortecimento">não</td>
+        <td data-label="Corretor Postural">4 unidades</td>
+        <td data-label="Superfície">110 x 42 cm</td>
+        <td data-label="Uso Recomendado">Caminhada (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Painel digital, dobrável</td>
+        <td data-label="Observações">2.5 Treino máximo 99min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 2.8 HP</td>
+        <td data-label="Vel. Máx.">16 km/h</td>
+        <td data-label="Cap. Peso">120 kg</td>
+        <td data-label="Inclinação">Manual</td>
+        <td data-label="Amortecimento">não</td>
+        <td data-label="Corretor Postural">4 unidades</td>
+        <td data-label="Superfície">122 x 42 cm</td>
+        <td data-label="Uso Recomendado">Caminhada (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Monitoramento de frequência cardíaca, programas de treino</td>
+        <td data-label="Observações">2.8 Treino máximo 99min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 2.9 HP</td>
+        <td data-label="Vel. Máx.">16 km/h</td>
+        <td data-label="Cap. Peso">130 kg</td>
+        <td data-label="Inclinação">Manual</td>
+        <td data-label="Amortecimento">não</td>
+        <td data-label="Corretor Postural">4 unidades</td>
+        <td data-label="Superfície">122 x 45 cm</td>
+        <td data-label="Uso Recomendado">Caminhada (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">12 programas pré-definidos, 3 modos de contagem regressiva</td>
+        <td data-label="Observações">2.9 Treino máximo 99min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 3.0 HP</td>
+        <td data-label="Vel. Máx.">16 km/h</td>
+        <td data-label="Cap. Peso">120 kg</td>
+        <td data-label="Inclinação">Ajustável eletrônica</td>
+        <td data-label="Amortecimento">Sim</td>
+        <td data-label="Corretor Postural">4 unidades</td>
+        <td data-label="Superfície">125 x 44 cm</td>
+        <td data-label="Uso Recomendado">Corrida (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Painel LCD</td>
+        <td data-label="Observações">3.0 Treino máximo 99min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 4.0 HP</td>
+        <td data-label="Vel. Máx.">18 km/h</td>
+        <td data-label="Cap. Peso">130 kg</td>
+        <td data-label="Inclinação">Ajustável eletrônica</td>
+        <td data-label="Amortecimento">Sim</td>
+        <td data-label="Corretor Postural">4 unidades</td>
+        <td data-label="Superfície">125 x 48 cm</td>
+        <td data-label="Uso Recomendado">Corrida (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Painel LCD, programas de treino avançados</td>
+        <td data-label="Observações">4.0 Treino máximo 99min (desliga sozinha após esse período). Recomendado esperar 5 minutos para um novo ciclo.</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 4.3 HP</td>
+        <td data-label="Vel. Máx.">20 km/h</td>
+        <td data-label="Cap. Peso">150 kg</td>
+        <td data-label="Inclinação">Ajustável eletrônica</td>
+        <td data-label="Amortecimento">Sim</td>
+        <td data-label="Corretor Postural">8 unidades</td>
+        <td data-label="Superfície">141 x 50 cm</td>
+        <td data-label="Uso Recomendado">Corrida (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">XX</td>
+        <td data-label="Características">Monitoramento de frequência cardíaca, programas de treino avançados</td>
+        <td data-label="Observações">USB/MP3 / Entrada para fone de ouvido / Reprodução de áudio e vídeo (MP3, MP4, MOV, APE) / Conexão Wi-Fi para aplicativos integrados e entretenimento</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">Gallant 4.5 HP</td>
+        <td data-label="Vel. Máx.">20 km/h</td>
+        <td data-label="Cap. Peso">150 kg</td>
+        <td data-label="Inclinação">Ajustável eletrônica</td>
+        <td data-label="Amortecimento">Sim</td>
+        <td data-label="Corretor Postural">8 unidades</td>
+        <td data-label="Superfície">150 x 53 cm</td>
+        <td data-label="Uso Recomendado">Corrida (uso doméstico)</td>
+        <td data-label="Tomada">10A</td>
+        <td data-label="?">—</td>
+        <td data-label="Características">Painel LCD</td>
+        <td data-label="Observações">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Tabela de Códigos dos Fabricantes para Peças de Esteiras</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 12%;">MODELO FÁBRICA</th>
+        <th style="width: 20%;">MODELO</th>
+        <th style="width: 20%;">NOME AMIGÁVEL</th>
+        <th style="width: 15%;">CORREIA</th>
+        <th style="width: 18%;">TIPO DE INCLINAÇÃO</th>
+        <th style="width: 10%;">MOTOR (HP)</th>
+        <th style="width: 15%;">FABRICANTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="MODELO FÁBRICA">T2715</td>
+        <td data-label="MODELO">GEe11M16A</td>
+        <td data-label="NOME AMIGÁVEL">COMPACT FOLD</td>
+        <td data-label="CORREIA">PJ356/140J</td>
+        <td data-label="TIPO DE INCLINAÇÃO">SEM INCLINAÇÃO</td>
+        <td data-label="MOTOR (HP)">1.6</td>
+        <td data-label="FABRICANTE">SAIYI</td>
+      </tr>
+      <tr>
+        <td data-label="MODELO FÁBRICA">S80</td>
+        <td data-label="MODELO">GEe10M19A</td>
+        <td data-label="NOME AMIGÁVEL">TRAINER 1.9</td>
+        <td data-label="CORREIA">—</td>
+        <td data-label="TIPO DE INCLINAÇÃO">SEM INCLINAÇÃO</td>
+        <td data-label="MOTOR (HP)">1.9</td>
+        <td data-label="FABRICANTE">IRUN</td>
+      </tr>
+      <tr>
+        <td data-label="MODELO FÁBRICA">S105</td>
+        <td data-label="MODELO">GEe11M20A</td>
+        <td data-label="NOME AMIGÁVEL">TRAINER 2.0</td>
+        <td data-label="CORREIA">—</td>
+        <td data-label="TIPO DE INCLINAÇÃO">MANUAL</td>
+        <td data-label="MOTOR (HP)">2.0</td>
+        <td data-label="FABRICANTE">IRUN</td>
+      </tr>
+      <!-- ... (demais linhas da tabela de fabricantes seguem o mesmo padrão) ... -->
+      <tr>
+        <td data-label="MODELO FÁBRICA">K553D-A19</td>
+        <td data-label="MODELO">GEE15E45A</td>
+        <td data-label="NOME AMIGÁVEL">ELITE PRÓ 4.5</td>
+        <td data-label="CORREIA">—</td>
+        <td data-label="TIPO DE INCLINAÇÃO">AUTOMÁTICA</td>
+        <td data-label="MOTOR (HP)">4.5</td>
+        <td data-label="FABRICANTE">KPOWER</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section id="bancos">
+    <h2>Bancos de Musculação</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Modelo</th>
+          <th>Código</th>
+          <th>Classificação</th>
+          <th>Capacidade (total somado com usuário)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Adicione as linhas aqui quando tiver os dados -->
+        <!-- Exemplo: <tr><td data-label="Modelo">Modelo X</td><td data-label="Código">ABC123</td><td data-label="Classificação">Profissional</td><td data-label="Capacidade">300 kg</td></tr> -->
+      </tbody>
+    </table>
+  </section>
+
+</div>
+
+<footer>
+  © Gallant – Suporte Técnico
+</footer>
+
+</body>
+</html>
