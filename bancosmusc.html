@@ -13,9 +13,14 @@
       background-color: #f8f9fa;
       color: #333;
       line-height: 1.6;
-   nav {
+  nav {
   background-color: #2c3e50;
-  padding: 1rem;
+  padding: 1rem 0;
+}
+
+nav .nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -25,11 +30,13 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
+  display: inline-block;
 }
 
 nav a:hover {
   color: #3498db;
 }
+
 
 
     .container {
@@ -80,13 +87,15 @@ nav a:hover {
 <body>
 
 <nav>
-  <a href="index.html">Início</a>
-  <a href="remos.html">Remos</a>
-  <a href="bicicletas.html">Bicicletas</a>
-  <a href="esteiras.html">Esteiras</a>
-  <a href="bancosmusc.html">Bancos de musculação e supino</a>
-  <a href="estacoes.html">Estações</a>
-  <a href="Links.html">Links Úteis</a>
+  <div class="nav-container">
+    <a href="index.html">Início</a>
+    <a href="remos.html">Remos</a>
+    <a href="bicicletas.html">Bicicletas</a>
+    <a href="esteiras.html">Esteiras</a>
+    <a href="bancosmusc.html">Bancos de musculação e supino</a>
+    <a href="estacoes.html">Estações</a>
+    <a href="Links.html">Links Úteis</a>
+  </div>
 </nav>
 
 <div class="container">
