@@ -91,30 +91,150 @@
 
 <div class="container">
 
-<CENTER>   <B><h1>TAMANHOS DOS CABOS DE AÇO DAS ESTAÇÕES/h1></B></CENTER>
-<table border="0" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif;">
+<CENTER>   <B><h1>TAMANHOS DOS CABOS DE AÇO DAS ESTAÇÕES/h1></B></CENTER></div>h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bancos de Musculação e Supino - Gallant</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #1a3c6d;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #1a3c6d;
+            padding-bottom: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto 40px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #1a3c6d;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f5faff; /* azul bem claro */
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tr:hover {
+            background-color: #e8f4ff;
+            transition: background-color 0.2s;
+        }
+        .capacidade {
+            font-weight: bold;
+            color: #006600;
+        }
+        .residencial {
+            color: #0066cc;
+        }
+        .profissional {
+            color: #cc6600;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                display: none;
+            }
+            tr {
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                top: 14px;
+                left: 16px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                content: attr(data-label);
+                color: #1a3c6d;
+            }
+        }
+    </style>
+</head>
+<body>
 
-  <thead>
-    <tr style="background-color:#2c3e50; color:white;">
-      <th>Modelo</th>
-      <th>Identificação</th>
-      <th>Descrição</th>
-      <th>Comprimento</th>
-      <th>Diâmetro</th>
-    </tr>
-  </thead>
+    <h1>Bancos de Musculação e Supino - Gallant</h1>
 
-  <tbody>
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo / Descrição</th>
+                <th>Código</th>
+                <th>Classificação</th>
+                <th>Capacidade (total somado com usuário)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Modelo / Descrição">Banco de Musculação 6 Níveis de Ajuste</td>
+                <td data-label="Código">GBS1H06A-PT</td>
+                <td data-label="Classificação" class="residencial">Residencial</td>
+                <td data-label="Capacidade" class="capacidade">200 KG</td>
+            </tr>
+            <tr>
+                <td data-label="Modelo / Descrição">Banco Para Musculação Elite 13 Níveis</td>
+                <td data-label="Código">GBS01H13APT</td>
+                <td data-label="Classificação" class="residencial">Residencial</td>
+                <td data-label="Capacidade" class="capacidade">220 Kg</td>
+            </tr>
+            <tr>
+                <td data-label="Modelo / Descrição">Banco de Musculação Elite Profissional</td>
+                <td data-label="Código">GBS01S10A-PT</td>
+                <td data-label="Classificação" class="profissional">Profissional</td>
+                <td data-label="Capacidade" class="capacidade">300 Kg</td>
+            </tr>
+            <tr>
+                <td data-label="Modelo / Descrição">Banco de Supino Gallant Elite X</td>
+                <td data-label="Código">GBS1H01A-PT</td>
+                <td data-label="Classificação" class="residencial">Residencial</td>
+                <td data-label="Capacidade" class="capacidade">250 Kg</td>
+            </tr>
+            <tr>
+                <td data-label="Modelo / Descrição">Banco De Musculação Declinado Prancha Abdominal Gallant</td>
+                <td data-label="Código">GBA1H00A-PT</td>
+                <td data-label="Classificação" class="residencial">Residencial</td>
+                <td data-label="Capacidade" class="capacidade">120 Kg</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <!-- GEM45H25A-PT -->
-    <tr style="background-color:#f9fbfd;">
-      <td rowspan="3"><strong>GEM45H25A-PT</strong></td>
-      <td>D13</td>
-      <td>Cabo de aço</td>
-      <td>2520 mm</td>
-      <td>Ø 5 mm</td>
-    </tr>
-    <tr style="back
+</body>
+</html>
 
 <!-- ========================= -->
 <!-- COLE AQUI SEU CONTEÚDO -->
