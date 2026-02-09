@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeos</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #3498db;
+    }
 
+    /* CONTAINER PADRÃO */
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin: 2rem 0 1rem;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.8rem;
+      font-size: 2.2rem;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    /* PLAYER */
+    #player-container {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0 2rem;
+    }
+
+    #videoPlayer {
+      width: 680px;
+      height: 382px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* GRID DE VÍDEOS */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .video-card {
+      cursor: pointer;
+      background: #f9fcff;
+      border: 1px solid #e0e8f0;
+      border-radius: 12px;
+      padding: 1rem;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .video-card img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .video-title {
+      margin-top: 0.6rem;
+      font-size: 0.95rem;
+      color: #34495e;
+      font-weight: bold;
+    }
+
+    .video-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(52, 152, 219, 0.15);
+      border-color: #3498db;
+      background: #eef7ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.8rem;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      #videoPlayer {
+        width: 100%;
+        height: 240px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="remos.html">Remos</a>
+  <a href="bicicletas.html">Bicicletas</a>
+  <a href="esteiras.html">Esteiras</a>
+  <a href="bancosmusc.html">Bancos musc.</a>
+  <a href="estacoes.html">Estações</a>
+  <a href="videos.html">Vídeos Úteis</a>
+  <a href="Links.html">Links Úteis</a>
+</nav>
+
+<div class="container">
+<table border="1" cellpadding="8" cellspacing="0" 
+       style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; text-align: center;">
+
+  <!-- CABEÇALHO -->
+  <tr style="background:#2c3e50; color:white; font-weight:bold;">
+    <th>SKU</th>
+    <th>NOME SITE</th>
+    <th>MODELO</th>
+    <th>CORREIA</th>
+    <th>FABRICANTE</th>
+  </tr>
+
+  <!-- LINHAS DE DADOS -->
+  <tr><td>E61360100080019011</td>Elíptico Magnético Gallant Elite Pro<td>GEL05HMGA-PT</td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+
+</table>
+
+ 
+
+  </div>
+
+</div>
+
+<footer>
+  © Gallant – Suporte Técnico | Todos os direitos reservados
+</footer>
+
+<script>
+function openVideo(videoId) {
+  const player = document.getElementById('videoPlayer');
+  player.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+}
+</script>
+
+</body>
+</html>
