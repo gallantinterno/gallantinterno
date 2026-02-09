@@ -29,7 +29,7 @@
       color: #3498db;
     }
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 3rem auto;
       padding: 0 1.5rem;
       background: white;
@@ -49,12 +49,15 @@
       font-size: 1.1rem;
       color: #555;
       margin-bottom: 2.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .links-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.8rem;
-      padding: 1rem 0 2.5rem;
+      padding: 1rem 0 3rem;
     }
     .link-card {
       background: #f9fcff;
@@ -91,6 +94,28 @@
       margin-bottom: 0.8rem;
       color: #3498db;
     }
+    .mural-card {
+      grid-column: 1 / -1;
+      text-align: left;
+      align-items: stretch;
+      justify-content: flex-start;
+      padding: 1.5rem 2rem;
+      min-height: auto;
+      background: #f9fcff;
+      border: 1px solid #e0e8f0;
+      border-radius: 12px;
+    }
+    .mural-card .header {
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+    }
     footer {
       text-align: center;
       padding: 1.8rem;
@@ -105,6 +130,9 @@
       }
       h1 {
         font-size: 1.8rem;
+      }
+      .container {
+        margin: 2rem 1rem;
       }
     }
   </style>
@@ -126,7 +154,7 @@
 <div class="container">
   <h1>Links Úteis Gallant</h1>
   
-  <p class="intro">Acesse rapidamente os canais oficiais e principais plataformas da Gallant para acompanhar novidades, produtos e suporte.</p>
+  <p class="intro">Acesse rapidamente os canais oficiais e principais plataformas da Gallant para acompanhar novidades, produtos, suporte e deixar seu recado.</p>
 
   <div class="links-grid">
 
@@ -144,63 +172,29 @@
       <p>Catálogo completo, loja online e informações detalhadas</p>
     </a>
 
-    <iframe 
- <div class="link-card" style="grid-column: 1 / -1; padding: 1rem;">
-  <div class="icon">📝</div>
-  <h2>Mural de Recados</h2>
-  <p>Deixe seu recado para a equipe Gallant</p>
-
-  <iframe 
-  <div class="link-card mural-card" style="
-  grid-column: 1 / -1;
-  text-align: left;
-  align-items: stretch;
-  justify-content: flex-start;
-  padding: 1.5rem;
-  min-height: auto;
-">
-
-  <div style="text-align:center;">
-    <div class="icon">📝</div>
-    <h2>Mural de Recados</h2>
-    <p>Mensagens internas e comunicações da equipe Gallant</p>
-  </div>
-
-  <div style="margin-top:1rem; width:100%;">
-    <iframe 
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAaq8X-C679X1rg5PPqYp8wQkQjQuQVPeVqwPjQcGSKjPVdBLlAosdE70Pn32C5qsFonUo11CNZ7KJ/pubhtml?gid=1800812407&single=true&widget=true&headers=false"
-      width="100%" 
-      height="500" 
-      style="border:none; border-radius:8px;">
-    </iframe>
-  </div>
-
-</div>
-
-  <iframe 
-    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAaq8X-C679X1rg5PPqYp8wQkQjQuQVPeVqwPjQcGSKjPVdBLlAosdE70Pn32C5qsFonUo11CNZ7KJ/pubhtml?gid=1800812407&single=true&widget=true&headers=false"
-    width="100%" 
-    height="450" 
-    style="border:none; border-radius: 8px; background: white; margin-top: 0.5rem;">
-  </iframe>
-
-</div>
-
-
-</div>
-
-</iframe>
-<!-- Você pode adicionar mais links aqui facilmente -->
+    <!-- Adicione mais cards aqui conforme necessário -->
     <!-- Exemplo:
-    <a href="https://wa.me/55SEUNUMERO" target="_blank" class="link-card">
+    <a href="https://wa.me/5511999999999" target="_blank" class="link-card">
       <div class="icon">💬</div>
       <h2>WhatsApp Suporte</h2>
       <p>Fale diretamente com a equipe</p>
     </a>
     -->
 
-  </div>
+    <!-- Mural de Recados (largura total) -->
+    <div class="link-card mural-card">
+      <div class="header">
+        <div class="icon">📝</div>
+        <h2>Mural de Recados</h2>
+        <p>Deixe seu recado ou veja mensagens da equipe Gallant (respostas de formulário)</p>
+      </div>
+      <iframe 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAaq8X-C679X1rg5PPqYp8wQkQjQuQVPeVqwPjQcGSKjPVdBLlAosdE70Pn32C5qsFonUo11CNZ7KJ/pubhtml?gid=1800812407&single=true&widget=true&headers=false"
+        height="500">
+      </iframe>
+    </div>
 
+  </div>
 </div>
 
 <footer>
