@@ -6,106 +6,63 @@
 <title>Links de Vendas</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
-}
+body { margin:0; font-family:Arial; background:#0f172a; color:#e5e7eb; }
 
-/* ===== HEADER (mantém simples pra não quebrar teu site) ===== */
 header {
-    background: #020617;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    border-bottom: 1px solid #1f2937;
+    background:#020617;
+    padding:15px 30px;
+    font-weight:bold;
+    border-bottom:1px solid #1f2937;
 }
 
-/* ===== BUSCA ===== */
-.search-box {
-    width: 95%;
-    margin: 20px auto;
-}
+.search-box { width:95%; margin:20px auto; }
 
 .search-box input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background: #1e293b;
-    color: #fff;
-    font-size: 14px;
+    width:100%; padding:12px;
+    border-radius:8px; border:none;
+    background:#1e293b; color:#fff;
 }
 
-/* ===== TABELA ===== */
 .table-container {
-    width: 95%;
-    margin: 20px auto 40px;
-    background: #0f172a;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    width:95%; margin:20px auto;
+    border-radius:10px; overflow:hidden;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+table { width:100%; border-collapse:collapse; }
 
 th {
-    background: #1e293b;
-    padding: 14px;
-    text-align: left;
-    font-size: 14px;
+    background:#1e293b;
+    padding:14px;
+    text-align:left;
 }
 
 td {
-    padding: 12px;
-    border-top: 1px solid #1f2937;
+    padding:12px;
+    border-top:1px solid #1f2937;
 }
 
-tr:hover {
-    background: #1f2937;
-}
+tr:hover { background:#1f2937; }
 
-.sku {
-    font-weight: bold;
-    color: #cbd5f5;
-}
-
-/* ===== PRODUTO + IMAGEM ===== */
-.produto {
-    display: flex;
-    align-items: center;
-}
+.produto { display:flex; align-items:center; }
 
 .thumb {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-right: 10px;
+    width:50px; height:50px;
+    margin-right:10px;
+    border-radius:6px;
+    object-fit:cover;
 }
 
-/* ===== BOTÃO ===== */
 .btn {
-    color: #60a5fa;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn:hover {
-    text-decoration: underline;
+    color:#60a5fa;
+    text-decoration:none;
+    font-weight:bold;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-Links de Venda - Gallant
-</header>
+<header>Links de Venda - Gallant</header>
 
 <div class="search-box">
 <input type="text" id="searchInput" placeholder="Buscar por SKU ou produto...">
@@ -116,71 +73,49 @@ Links de Venda - Gallant
 
 <thead>
 <tr>
-<th>Código</th>
+<th>SKU</th>
 <th>Produto</th>
-<th>URL</th>
+<th>Link</th>
 </tr>
 </thead>
 
 <tbody>
 
-<tr>
-<td class="sku">PS0380010101011361</td>
-<td>
-<div class="produto">
-<img class="thumb" src="https://lojawebcontinental.vtexassets.com/arquivos/ids/70556759-1600-auto?v=639023522820030000&width=1600&height=auto&aspect=true">
-Manípulo de Ajuste para Bicicleta Ergométrica Spinning Gallant – Elite, Elite Pro e Elite X
-</div>
-</td>
-<td><a class="btn" href="https://www.webcontinental.com.br/manipulo-de-ajuste-para-bicicleta-ergometrica-spinning-gallant-elite-elite-pro-e-elite-x-ps0380010101011361/p" target="_blank">Link</a></td>
-</tr>
+<tr><td>PS0160010101011361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Monitor de Métricas Gallant Trainer 2.0</td><td><a class="btn" href="https://www.webcontinental.com.br/monitor-de-metricas-digital-para-bicicleta-ergometrica-gallant-trainer-2-0-gsb112-ps0160010101011361/p" target="_blank">Abrir</a></td></tr>
 
-<tr>
-<td class="sku">PS0410010105011361</td>
-<td>
-<div class="produto">
-<img class="thumb" src="https://via.placeholder.com/50">
-Apoio de Cotovelo para Guidão de Bicicleta Spinning Gallant GSB0028
-</div>
-</td>
-<td><a class="btn" href="https://www.webcontinental.com.br/apoio-de-cotovelo-para-guidao-de-bicicleta-spinning-gallant-gsb0028-ps0410010105011361/p" target="_blank">Link</a></td>
-</tr>
+<tr><td>PS0140120401011361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Selim Espuma Spinning Gallant Elite X</td><td><a class="btn" href="https://www.webcontinental.com.br/selim-de-espuma-para-bicicleta-ergometrica-spinning-gallant-elite-x-gsb0004-ps0140120401011361/p" target="_blank">Abrir</a></td></tr>
 
-<tr>
-<td class="sku">PS0360010105011361</td>
-<td>
-<div class="produto">
-<img class="thumb" src="https://via.placeholder.com/50">
-Sapata Feltro para Spinning Gallant
-</div>
-</td>
-<td><a class="btn" href="https://www.webcontinental.com.br/sapata-feltro-para-spinning-gallant-ps0360010105011361/p" target="_blank">Link</a></td>
-</tr>
+<tr><td>PC0030040201020202</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Placa Eletrônica Coifa Gallant</td><td><a class="btn" href="https://www.webcontinental.com.br/placa-eletronica-para-coifa-gallant-modelos-gco90gt1a--gco90ie1a/p" target="_blank">Abrir</a></td></tr>
 
-<tr>
-<td class="sku">PS0150010105011361</td>
-<td>
-<div class="produto">
-<img class="thumb" src="https://via.placeholder.com/50">
-Pedais de Uso Exclusivo p/ Bicicleta Ergométrica Gallant Elite X / Elite / Elite Pro
-</div>
-</td>
-<td><a class="btn" href="https://www.webcontinental.com.br/pedais-de-uso-exclusivo-p-bicicleta-ergometrica-gallant-elite-x-elite-elite-pro-ps0150010105011361/p" target="_blank">Link</a></td>
-</tr>
+<tr><td>PS1120010133011362</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Cesto Panificadora Gallant</td><td><a class="btn" href="https://www.webcontinental.com.br/cesto-interno-panificadora-gallant-gpa1e19a-ps1120010133011362/p" target="_blank">Abrir</a></td></tr>
 
-<tr>
-<td class="sku">PS0240010101011361</td>
-<td>
-<div class="produto">
-<img class="thumb" src="https://via.placeholder.com/50">
-Alavanca Fixação Selim Gallant Elite Pro
-</div>
-</td>
-<td><a class="btn" href="https://www.webcontinental.com.br/alavanca-fixacao-selim-gallant-elite-pro-ps0240010101011361/p" target="_blank">Link</a></td>
-</tr>
+<tr><td>PC0030020101011361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Filtro Alumínio Coifa</td><td><a class="btn" href="https://www.webcontinental.com.br/filtro-de-aluminio-para-coifas-gallant-pc0030020101011361/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PF01213600101010125</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Panela Air Fryer GFE05ATA</td><td><a class="btn" href="https://www.webcontinental.com.br/panela-interna-para-air-fryer-gallant-gfe05ata-pf01213600101010125/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0180010108011361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Canote Selim Gallant</td><td><a class="btn" href="https://www.webcontinental.com.br/canote-do-selim-para-bicicleta-spinning-gallant-pro-gsb18hbta-pt-ps0180010108011361/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0220010108011362</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Avanço Guidão Gallant</td><td><a class="btn" href="https://www.webcontinental.com.br/avanco-mesa-suporte-do-guidao-spinning-gallant-gsb18hbta-pt-e-gsb13hbta-pt-ps0220010108011362/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0410010105011364</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Acabamento Avanço Spinning</td><td><a class="btn" href="https://www.webcontinental.com.br/acabamento-plastico-do-avanco-spinning-gallant-gsb034-compativel-elite-x-elite-elite-pro-ps0410010105011364/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0190010204011361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Sistema Amortecimento</td><td><a class="btn" href="https://www.webcontinental.com.br/ps0190010204011361/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PF01213600101010115</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Panela Air Fryer GFE07ATA</td><td><a class="btn" href="https://www.webcontinental.com.br/panela-interna-para-air-fryer-gallant-gfe07ata-pf01213600101010115/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PC0050070202021361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Luminária LED Coifa Mecânico</td><td><a class="btn" href="https://www.webcontinental.com.br/lampada-led-branca-para-coifas-gallant-para-127v-e-220v-mecanico/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PC0050010202021361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Luminária LED Coifa Touch</td><td><a class="btn" href="https://www.webcontinental.com.br/lampada-led-branca-para-coifas-gallant-para-127v-e-220v-touch-e-eletronico/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0400010105011365</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Rolamento 6300 Spinning</td><td><a class="btn" href="https://www.webcontinental.com.br/rolamento-6300-p-spinning-gallant-gsb13hbta-pt-e-gsb08hbta-pt-ps0400010105011365/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0150010105011362</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Pedais Trainer Flow</td><td><a class="btn" href="https://www.webcontinental.com.br/pedais-p-bicicleta-ergometrica-gallant---trainer-e-flow-ps0150010105011362/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>PS0160010105011361</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Monitor com Fio Trainer</td><td><a class="btn" href="https://www.webcontinental.com.br/monitor-de-metricas-com-fio-para-spinning-gallant-trainer-e-flow-gsm006-ps0160010105011361/p" target="_blank">Abrir</a></td></tr>
+
+<tr><td>SWITCH</td><td class="produto"><img class="thumb" src="https://via.placeholder.com/50">Switch Touch Coifa Gallant</td><td><a class="btn" href="https://www.webcontinental.com.br/switch-touch-para-coifas-gallant-gco90gt1a--gco60vt1a--gco90vt1a/p" target="_blank">Abrir</a></td></tr>
 
 </tbody>
-
 </table>
 </div>
 
@@ -188,7 +123,6 @@ Alavanca Fixação Selim Gallant Elite Pro
 document.getElementById("searchInput").addEventListener("keyup", function() {
     let filter = this.value.toLowerCase();
     let rows = document.querySelectorAll("tbody tr");
-
     rows.forEach(row => {
         let text = row.innerText.toLowerCase();
         row.style.display = text.includes(filter) ? "" : "none";
